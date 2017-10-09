@@ -51,7 +51,7 @@ SECRET_KEY=INSERT_YOUR_SECRET_KEY_HERE
 
 7. In pop out menu, your API key will be displayed
 
-    *You can **RestrictKey** and change **name*** 
+    *You can **Restrict Key** and change **name*** 
 
 8. Insert key inside the `.env` file:
 ```
@@ -61,6 +61,6 @@ KEY=INSERT_YOUR_KEY_HERE
 9. Enable [Google Maps Geocoding API](https://console.cloud.google.com/apis/api/geocoding_backend/overview)
 
 ## Run Application
-1. In terminal:
+1. Inside project folder and activated Virtualenv:
 
         $ python app.py
