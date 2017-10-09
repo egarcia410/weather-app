@@ -12,7 +12,7 @@ Reports location's current weather forecast, uses Dark Sky API and Google Maps G
 
         $ cd weather-app
 
-4. Install VirtualWrapper](https://virtualenvwrapper.readthedocs.io/en/latest/install.html)
+4. Install [VirtualWrapper](https://virtualenvwrapper.readthedocs.io/en/latest/install.html)
 
 5. Create and Activate Virtualenv:
 
