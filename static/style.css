@@ -1,0 +1,29 @@
+html {
+    background-color: #4FCEAE;
+}
+
+.field {
+  justify-content: center !important;
+}
+
+.inputField {
+    width: 100%;
+    margin-left: 20%;
+}
+
+.submitButton {
+    margin-right: 20%;
+}
+
+.weatherDetails {
+    text-align: center;
+    font-size: 30px;
+}
+
+.weatherImg {
+    width: 200px;
+}
+
+.locationName {
+    margin-top: 20px;
+}
