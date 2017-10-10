@@ -64,3 +64,5 @@ KEY=INSERT_YOUR_KEY_HERE
 1. Inside project folder and activated Virtualenv:
 
         $ python app.py
+
+![](./static/img/img.png)
