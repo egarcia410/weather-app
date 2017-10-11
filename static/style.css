@@ -27,3 +27,13 @@ html {
 .locationName {
     margin-top: 20px;
 }
+
+.forecastBox {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.forecastTime {
+    font-weight: 700;
+}

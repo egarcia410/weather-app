@@ -25,9 +25,22 @@
             {% if summary %}
                 <div class="weatherDetails">
                     <p class="locationName">{{location | upper}}</p>
+                    <p class="forecastTime">Now</p>
                     <img class="weatherImg" src="../static/img/{{icon}}.svg" alt="{{icon}}">
                     <p>{{summary}}</p>
                     <p>{{temp}}&deg;F</p>
+                </div>
+                <hr>
+                <div class="columns">
+                    {% for key in daily %}
+                        <div class="column forecastBox">
+                            <p class="forecastTime">{{ daily[key]['time'] }}</p>
+                            <img class="weatherImg" src="../static/img/{{daily[key]['icon']}}.svg" alt="{{daily[key]['icon']}}">
+                            <p>{{daily[key]['summary']}}</p>
+                            <p>{{daily[key]["temperatureHigh"]}}&deg;F</p>
+                            <p>{{daily[key]["temperatureLow"]}}&deg;F</p>
+                        </div>
+                    {% endfor %}
                 </div>
             {% endif %}
         </div>  
