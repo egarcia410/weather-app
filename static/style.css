@@ -37,3 +37,9 @@ html {
 .forecastTime {
     font-weight: 700;
 }
+
+hr {
+    border: none;
+    height: 6px;
+    border-radius: 15px;
+}

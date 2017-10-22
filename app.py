@@ -34,6 +34,10 @@ class MainHandler(TemplateHandler):
         payload = {'address': encodeLocation, 'key': os.environ['KEY']}
         response = requests.get('https://maps.googleapis.com/maps/api/geocode/json', params=payload)
         data = response.json()
+        print(data)
+        if data["status"] == "ZERO_RESULTS":
+            message = "Location Unknown, Please enter valid location"
+            return self.render_template("home.html", {"message": message})
         location = data['results'][0]['formatted_address']
         # Retrieve lat and long from Google Maps 
         data = response.json()
@@ -44,7 +48,6 @@ class MainHandler(TemplateHandler):
         # lng = '-95.1797696'
         # Request to DarkSky 
         response = requests.get('https://api.darksky.net/forecast/{}/{},{}'.format(os.environ['SECRET_KEY'], lat, lng))
-        print(response.url)
         data = response.json()
         daily = {}
         for info in range(1, 4):
