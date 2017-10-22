@@ -1,4 +1,5 @@
 .vscode
+.git_s3_push
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
